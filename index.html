@@ -43,7 +43,7 @@
 			<label class="form-label">Importe Préstamo*</label>
 			<input class="form-input" type="number" name="loan_amount" id="loan_amount" min="10" max="1000" required>
 			<label class="form-label">Fecha a conseguir el préstamo*</label>
-			<input class="form-input" type="date" name="loan_date" id="loan_date" value="YYYY-MM-DD" min=""> 
+			<input class="form-input" type="date" name="loan_date" id="loan_date" value="YYYY-MM-DD" min="" required> 
 			<label class="form-label">Tiempo a devolver</label>
 			<select class="form-input" name="loan_weeks" id="loan_weeks"required>
 				<option value="1">1</option>
@@ -71,7 +71,7 @@
 				<label class="form-label form-terminos">Aceptar <strong><a class="link-terminos" href="https://comparte.bnext.io/privacidad">términos y condiciones *</a></strong> </label>
 				<input class="check" type="checkbox" name="check" id="check" required>
 			</div>
-			<input class="userSelector-btn	"type="button" name="boton2" id="boton2" onclick="sendData()" value="Enviar_Datos">
+			<input type="submit" class="userSelector-btn submit-btn" value="Enviar Datos">
 
 	</form>
 
@@ -86,8 +86,20 @@
 		
 	</section>
 
+	<!-- 
+		Mensaje de agradecimiento
+
+	 -->
+	<section class="userThanks">
+		
+		<h1 class="userNo-text">Gracias, en breve te contactarémos</h1>
+		<input type="button" class="userSelector-btn" onclick="refresh()" value="Regresar">
+		
+	</section>
+
 
 	<script type="text/javascript" src="functions.js"></script>
+
 
 </body>
 </html>

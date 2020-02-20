@@ -85,7 +85,8 @@ estilo para el mensaje de usuario no encontrado
 #data{
     display:none;
 }
-.userNo{
+.userNo,
+.userThanks{
     display: none;
     justify-items: center;
     align-content: center;
@@ -147,6 +148,10 @@ estilos para el formulario
     text-decoration: none;
 
 }
-#boton2{
+.submit-btn{
     margin-bottom: 40px;
+}
+
+.userThanks{
+
 }

@@ -1,0 +1,152 @@
+/* 
+Estilos para la prueba técnica de Bnext, 
+hecho por Leonardo Lopez basado en los estilos que se usan en el sitio web = bnext.io
+*/
+
+
+/*
+
+asignando estilo globales
+*/
+@font-face {
+    font-family: averta;
+    src: url(./assets/fonts/averta/AvertaDemoPECuttedDemo-Regular.otf);
+    }
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: averta;
+    color: #364b69;
+}
+
+
+
+/* 
+Estilos para el header que contiene el logotipo de Bnext
+*/
+
+.header{
+        height: 100px;
+        width: 95%;
+        margin-left: auto;
+        margin-top: 40px;
+}
+.header-logo{
+    height: 35px;
+    width: 135px;
+}
+
+/* 
+estilos para el selector de usuario
+*/
+
+.userSelector{
+    display: grid;
+    grid-template-columns:95%;
+    justify-content: center;
+    height: 350px;
+    justify-items: center;
+   
+}
+.userSelector-select{
+    height: 50px;
+    width: 250px;
+    border: none;
+    background-color: white;
+    box-shadow: inset 0 -1px 0 #ddd;
+    color: #364b69;
+    font-size: 16px;
+    align-self:center;
+}
+.userSelector-select:focus{
+    outline: none;
+    box-shadow: inset 0 -1px 0 #ff0068;
+    }
+
+
+.userSelector-btn{
+    color: #fff;
+    background-color: #ff0068;
+    border: none;
+    width: 333px;
+    height: 54px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    align-self: center;
+    outline: none;
+    
+}
+
+
+/* 
+estilo para el mensaje de usuario no encontrado
+*/
+#data{
+    display:none;
+}
+.userNo{
+    display: none;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    width: 95%;
+    height: 320px;
+}
+.userNo-text{
+    color: #364b69;
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+
+
+/* 
+estilos para el formulario  
+
+*/
+
+.form{
+    grid-row-gap: 10px;
+    width: 95%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    
+}
+.form-label{
+    color: rgb(134,141,159);
+}
+.form-input{
+    height: 35px;
+    box-shadow: inset 0 -1px 0 #ddd;
+    border: none;
+    background-color: white;
+    width: 333px;
+    outline: none;
+    padding-left: 10px;
+}
+.form-input:focus{
+    box-shadow: inset 0 -1px 0 #ff0068;
+}
+.form-input:disabled{
+    background-color: rgb(233, 232, 232);
+}
+.terminos{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin: 30px 0px;
+}
+
+.form-terminos{
+    font-size: 14px;
+}
+
+.link-terminos{
+    color: #ff0068;
+    text-decoration: none;
+
+}
+#boton2{
+    margin-bottom: 40px;
+}

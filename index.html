@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bnext Challenge</title>
+	<meta name="author" content = "Leonardo Lopez">
+	<meta name=" description" content="Esto es una prueba técnica realizada por Leonardo Lopez, basado en los estilos que se tienen en bnext.io">
+	<meta name="theme-color" content="#ff0068">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<img src="assets/img/bnextlogo.png" alt="bnext_logo" class="header-logo">
+	</header>
+	<form id="form" name='form' class="userSelector">
+		<select id="number" name="number" class="userSelector-select">
+			<option value="">Elige tu ususario</option>
+			<option value=1>1</option>
+			<option value=2>2</option>
+		</select>
+		<input type="button" name="boton" id="boton" onclick="requestData()" value="Seleccionar" class="userSelector-btn">
+	</form>
+  
+  <!-- 
+	  formulario que se muestra al elegir usuario
+   -->
+
+	<form id="data" class="form">
+
+			<label class="form-label">Nombre</label>
+			<input class="form-input" name="name_received"  id="name_received" disabled>
+			<label class="form-label">Apellido</label>
+			<input class="form-input" name="surname_received"  id="surname_received" disabled>
+			<label class="form-label">Correo</label>
+			<input class="form-input" name="email_received"   id="email_received" disabled>
+			<label class="form-label">Telefono</label>
+			<input class="form-input" type="tel" name="phone_received"  id="phone_received" required>
+			<label class="form-label">Edad*</label>
+			<input class="form-input" type="" name="age_received"  id="age_received" required>
+			<label class="form-label">Importe Préstamo*</label>
+			<input class="form-input" type="number" name="loan_amount" id="loan_amount" min="10" max="1000" required>
+			<label class="form-label">Fecha a conseguir el préstamo*</label>
+			<input class="form-input" type="date" name="loan_date" id="loan_date" value="YYYY-MM-DD" min=""> 
+			<label class="form-label">Tiempo a devolver</label>
+			<select class="form-input" name="loan_weeks" id="loan_weeks"required>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+			</select>
+			<div class="terminos">
+				<label class="form-label form-terminos">Aceptar <strong><a class="link-terminos" href="https://comparte.bnext.io/privacidad">términos y condiciones *</a></strong> </label>
+				<input class="check" type="checkbox" name="check" id="check" required>
+			</div>
+			<input class="userSelector-btn	"type="button" name="boton2" id="boton2" onclick="sendData()" value="Enviar_Datos">
+
+	</form>
+
+	<!-- 
+		mensaje que se muestra al recibir respuesta 400 del servidor
+	 -->
+	<section class="userNo">
+
+		
+		<h1 class="userNo-text">El usuario elegido no existe</h1>
+		<input type="button" class="userSelector-btn" onclick="refresh()" value="Regresar">
+		
+	</section>
+
+
+	<script type="text/javascript" src="functions.js"></script>
+
+</body>
+</html>
